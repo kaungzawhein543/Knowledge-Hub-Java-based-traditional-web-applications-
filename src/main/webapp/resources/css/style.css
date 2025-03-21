@@ -1,0 +1,70 @@
+
+        .navbar {
+            list-style-type: none;
+            position: fixed;
+            top:0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 0.3px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .container-fluid {
+            max-width: 1900px;
+            padding: 3px;
+        }
+
+        .navbar-nav li a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            padding: 5px 15px;
+            border: 1px solid transparent;
+            transition: 0.5 ease;
+            text-align: center;
+        }
+
+        .navbar-nav li a:hover {
+            background-color: gainsboro;
+            color: #111;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-content a {
+            display: block;
+			width:100%;
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width:100%;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f4f4f4;
+        }	
+         .auto-disappear {
+		    opacity: 1;
+		    transition: opacity 1s ease-in-out;
+		    position: fixed;
+		    bottom: 20%;
+		    display: block;
+		    width: auto;
+		    right: 45%;
+		    z-index:999;
+		    padding:10px;
+		    border-radius: 10px;
+		  }
+		
+		  #message.hidden {
+		    opacity: 0;
+		    transition: opacity 1s ease-in-out;
+		  }

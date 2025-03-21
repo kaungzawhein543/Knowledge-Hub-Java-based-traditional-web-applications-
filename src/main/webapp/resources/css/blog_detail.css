@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+ body {
+            height: auto;
+            overflow-y:hidden;
+        }
+
+        .navbar {
+            list-style-type: none;
+            position: fixed;
+            top:0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 0.3px 40px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+        }
+
+        .container-fluid {
+            max-width: 1900px;
+            padding: 3px;
+        }
+
+        .navbar-nav li a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            padding: 5px 40px;
+            border: 1px solid transparent;
+            transition: 0.5 ease;
+            text-align: center;
+        }
+		.navbar-nav li:not(#navbtn) a:hover {
+		    background-color: gainsboro;
+		    color: #111;
+		}
+		.navbar #navbtn:hover a{
+			color:white !important;
+		}
+		 #nitem {
+		    text-decoration: none;
+		    color: black;
+		    display: block;
+		    margin:0;
+		    width: 100%;
+		    transition: 0.5 ease;
+		    text-align: center;
+		    border-radius: 50px;
+		}	
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 100%;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 20px !important;
+            width: 100%;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f4f4f4;
+        }   
+
+        .navbar-brand {
+            font-size: 28px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin-left: 10px;
+        }

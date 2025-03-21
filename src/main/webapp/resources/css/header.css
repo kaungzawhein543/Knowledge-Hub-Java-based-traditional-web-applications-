@@ -1,0 +1,209 @@
+@charset "ISO-8859-1";
+ 		* {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 350vh;
+            scroll-behavior: smooth;
+            background-color: #e1e1e1 !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        .jumbotron {
+            width: 100%;
+            text-align: left;
+            /* Center the text */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 100vh;
+            color: black;
+            margin: 0;
+            /* Remove default bottom margin */
+        }
+
+        .viewknowledge {
+            background-color: rgb(14, 26, 135);
+            text-decoration: none;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .viewknowledge:hover {
+            background-color: rgb(19, 10, 62);
+            /* Darker shade on hover */
+            color: white;
+        }
+
+        .centered-content {
+            width: 50%;
+            /* Full width */
+            display: flex;
+            /* Use flexbox */
+            flex-direction: column;
+            /* Stack children vertically */
+            justify-content: center;
+            /* Center children vertically */
+            align-items: start;
+            /* Center children horizontally */
+            height: 90%;
+            /* Half of the viewport height */
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 50px;
+            min-width: 500px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            padding: 60px 0;
+        }
+
+        .about-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .team-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 90px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            max-width: 150px;
+            height: 150PX;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .contact-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .navbar-brand {
+            padding-left: 20px;
+            font-size: 27px !important;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-link{
+        	padding:20px !important;
+        	border-radius: 10px;
+        }
+        .login{        
+        	padding:20px !important;
+        }
+		nav{
+			padding: 0 !important;
+		}
+		.container-fluid{
+			padding: 0 !important;
+		}
+        .title {
+            font-size: 31px;
+        }
+
+        @media (max-width:1056px) {
+            .jumbotron img {
+                display: none;
+            }
+        }
+
+        .feedback-text {
+            max-width: 500px;
+        }
+
+        .feedback-text h3 {
+            color: #f19a0c;
+            font-weight: bold;
+        }
+
+        .feedback {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+        }
+
+        .feedback img {
+            width: 40%;
+            height: auto;
+        }
+
+        #footer {
+            background: #000;
+            width: 100%;
+            height: 15%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .location {
+            text-decoration: none;
+            color: white;
+        }
+
+        .firstfooter {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .secondfotter {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+        }

@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper{
+            margin:auto;
+            margin-top:60px;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aliceblue;
+        }
+        h3{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .registerForm {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin: 30px auto !important;
+            width: 50%;
+            padding: 20px;
+            padding-right: 3%;
+            gap: 10px;
+            min-width: 350px;
+            border-bottom: none;
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(5, 5, 5, 0.1);
+        }
+        .line{
+            border-bottom: 1px solid black;
+        }
+        .box{
+            position: relative;
+            padding: 11px;
+        }
+        .text{
+            background-color: white;
+            position: absolute;
+            top: -11%;
+            left: 49%;
+        } 
+        input{
+            margin-bottom: 10px;
+        }
+        label{
+			margin-bottom: 10px;
+		}
