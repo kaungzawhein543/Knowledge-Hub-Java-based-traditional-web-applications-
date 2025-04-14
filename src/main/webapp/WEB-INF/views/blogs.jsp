@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
-        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -255,8 +255,10 @@
 	     height: auto;
 	 }
 	 .blogcontent{
-	 	white-space: nowrap; /* Prevent text from wrapping */
+	 	white-space: pre-line; /* Prevent text from wrapping */
 	    overflow: hidden; /* Hide overflow text */
+	    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    	-webkit-box-orient: vertical;
 	    text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
 	 }
 	 .auto-disappear {
@@ -387,7 +389,16 @@
 				    </div>
                     <div id="content">
                         <div id="initialContent">
-                            <p class="blogcontent">${blog.content}</p>
+                        	
+                           <c:choose>
+						        <c:when test="${fn:length(blog.content) > 100}">
+						            <c:set var="shortText" value="${fn:substring(blog.content, 0, 100)}..." />
+						        </c:when>
+						        <c:otherwise>
+						            <c:set var="shortText" value="${blog.content}" />
+						        </c:otherwise>
+						    </c:choose>
+						    <p>${shortText}</p>
                         </div>
                         <a class="text-dark" href="detail?blogid=${blog.id}&userId=${sessionScope.userId}" id="seeMoreLink">See More</a>
                     </div>

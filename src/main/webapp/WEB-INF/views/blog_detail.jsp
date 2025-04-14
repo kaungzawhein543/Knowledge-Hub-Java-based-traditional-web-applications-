@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
@@ -270,7 +271,7 @@
             
 <div id="content">
     <div id="initialContent" style="word-break: break-all;">
-        <p>${blog.content}</p>
+         <p style="white-space: pre-line;">${blog.content}</p> 
     </div>
 </div>
 
